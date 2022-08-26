@@ -1,0 +1,59 @@
+.showcase-container {
+    padding: 50px 0px 100px 0;
+}
+.showcase-title {
+    margin-bottom: 40px;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-style: italic;
+    font-size: 32;
+    line-height: 36px;
+    font-weight: 700;
+}
+.showcase-card {
+    background: transparent;
+}
+.card-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.showcase-card-text {
+    font-size: 14px;
+    line-height: 20px;
+}
+.showcase-card-body {
+    padding-left: 0px !important;
+}
+.showcase-card-img {
+    border-radius: 0px !important;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in-left
+ * ----------------------------------------
+ */
+.fade-in-left {
+    animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fade-in-left {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-in-left {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
