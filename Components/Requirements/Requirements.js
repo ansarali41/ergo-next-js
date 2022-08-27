@@ -53,10 +53,11 @@ export const ErgoDappConnector = props => {
         autoClose: 5000,
         onClick: props => window.open(`https://chrome.google.com/webstore/detail/nautilus-wallet/gjlmehlldlphhljhpnlddaodbjjcchai/`, '_blank'),
     };
-
-    // window.addEventListener('ergo_wallet_disconnected', () => {
-    //     disconnectWallet();
-    // });
+    useEffect(() => {
+        window.addEventListener('ergo_wallet_disconnected', () => {
+            disconnectWallet();
+        });
+    }, []);
 
     useEffect(() => {
         const checkWallet = localStorage.getItem('walletConnected');
@@ -341,6 +342,7 @@ export const ErgoDappConnector = props => {
                                             gap: '5px',
                                         }}
                                     >
+                                        <span style={{ marginLeft: 14 }}></span>
                                         <Image
                                             alt="img"
                                             height="20"

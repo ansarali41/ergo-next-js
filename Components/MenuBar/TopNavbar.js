@@ -6,10 +6,12 @@ import { ErgoDappConnector } from '../Requirements/Requirements';
 export default function App({ ergopay }) {
     const [visible, setVisible] = useState(true);
     const [ergoPay, setErgoPay] = ergopay;
-    let walletButton = <ErgoDappConnector ergopayProps={[ergoPay, setErgoPay]} color={'purple'} />;
-    // if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    //     walletButton = <ErgoDappConnector ergopayProps={[ergoPay, setErgoPay]} color={'purple'} />;
-    // }
+    const [walletButton, setWalletButton] = useState(true);
+    useEffect(() => {
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            setWalletButton(<ErgoDappConnector ergopayProps={[ergoPay, setErgoPay]} color={'purple'} />);
+        }
+    }, []);
 
     const [position, setPosition] = useState(0);
     useEffect(() => {
