@@ -9,6 +9,7 @@ import netaIcon from '../../public/netaIcon.svg';
 
 // import '../../styles.css';
 import React from 'react';
+import Image from 'next/image';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
@@ -42,7 +43,8 @@ export default function WalletHover({ disconnect, sigUSDBalance, ergBalance, sig
                             <Menu.Item>
                                 {({ active }) => (
                                     <a href="#" className={classNames(active ? 'item1' : 'item2', 'item3')}>
-                                        <img src={ERGicon} className="token-icon-img" />
+                                        <Image alt="img" src={ERGicon} className="token-icon-img" height="20" width="20" />
+                                        <span style={{ marginRight: '15px' }}></span>
                                         <p>
                                             ERG Balance:
                                             <br />
@@ -56,7 +58,8 @@ export default function WalletHover({ disconnect, sigUSDBalance, ergBalance, sig
                             <Menu.Item>
                                 {({ active }) => (
                                     <a href="#" className={classNames(active ? 'item1' : 'item2', 'item3')}>
-                                        <img src={ERGicon} className="token-icon-img" />
+                                        <Image alt="img" src={ERGicon} className="token-icon-img" height="20" width="20" />
+                                        <span style={{ marginRight: '15px' }}></span>
                                         <p>
                                             SigUSD Balance:
                                             <br />
@@ -70,7 +73,8 @@ export default function WalletHover({ disconnect, sigUSDBalance, ergBalance, sig
                             <Menu.Item>
                                 {({ active }) => (
                                     <a href="#" className={classNames(active ? 'item1' : 'item2', 'item3')}>
-                                        <img src={SigRSVicon} className="token-icon-img" />
+                                        <Image alt="img" src={SigRSVicon} className="token-icon-img" height="20" width="20" />
+                                        <span style={{ marginRight: '15px' }}></span>
                                         <p>
                                             SigRSV Balance:
                                             <br />
@@ -84,7 +88,8 @@ export default function WalletHover({ disconnect, sigUSDBalance, ergBalance, sig
                             <Menu.Item>
                                 {({ active }) => (
                                     <a href="#" className={classNames(active ? 'item1' : 'item2', 'item3')}>
-                                        <img src={ERGicon} className="token-icon-img" />
+                                        <Image alt="img" src={ERGicon} className="token-icon-img" height="20" width="20" />
+                                        <span style={{ marginRight: '15px' }}></span>
                                         <p>
                                             ergopad Balance:
                                             <br />
@@ -98,7 +103,8 @@ export default function WalletHover({ disconnect, sigUSDBalance, ergBalance, sig
                             <Menu.Item>
                                 {({ active }) => (
                                     <a href="#" className={classNames(active ? 'item1' : 'item2', 'item3')}>
-                                        <img src={netaIcon} className="token-icon-img" />
+                                        <Image alt="img" src={netaIcon} className="token-icon-img" height="20" width="20" />
+                                        <span style={{ marginRight: '15px' }}></span>
                                         <p>
                                             NETA Balance:
                                             <br />
@@ -112,7 +118,8 @@ export default function WalletHover({ disconnect, sigUSDBalance, ergBalance, sig
                             <Menu.Item>
                                 {({ active }) => (
                                     <a href="#" className={classNames(active ? 'item1' : 'item2', 'item3')}>
-                                        <img src={paideiaIcon} className="token-icon-img" />
+                                        <Image alt="img" src={paideiaIcon} className="token-icon-img" height="20" width="20" />
+                                        <span style={{ marginRight: '15px' }}></span>
                                         <p>
                                             Paideia Balance:
                                             <br />
