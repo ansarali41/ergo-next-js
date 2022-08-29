@@ -17,8 +17,8 @@ const Showcase = () => {
 
                 {/* showcase elements*/}
                 <Container fluid>
-                    <CardGroup>
-                        <Row className="d-flex justify-content-evenly justify-content-sm-center">
+                    <CardGroup className="d-flex justify-content-center">
+                        <Row className="d-flex justify-content-evenly">
                             {data.map(item => (
                                 <Col key={item.id} sm={10} md={3} lg={3} className="py-4">
                                     <Card className="bg-transparent">
